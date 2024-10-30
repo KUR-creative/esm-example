@@ -1,0 +1,7 @@
+{:source-paths ["src/main"]
+ :dev-http {8000 "public"}
+ :builds
+ {:app
+  {:target :esm
+   :output-dir "public/js"
+   :modules {:demo {:exports {hello demo.lib/hello}}}}}}

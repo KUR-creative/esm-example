@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Module Example</title>
+</head>
+<body>
+  <h1>JavaScript Module Test</h1>
+  <p id="message"></p>
+
+  <!-- Importing the JavaScript module -->
+  <script type="module">
+    import { greet, inc } from './module.js';
+    
+    // Using the imported function
+    document.getElementById('message').textContent = greet('World');
+    console.log(inc(73));
+  </script>
+</body>
+</html>
+
